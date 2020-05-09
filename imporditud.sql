@@ -92,6 +92,9 @@ ALTER TABLE `Külastaja teenused` ADD CONSTRAINT `Külastaja teenused_fk0` FOREIGN
 
 ALTER TABLE `Külastaja teenused` ADD CONSTRAINT `Külastaja teenused_fk1` FOREIGN KEY (`Teenuse_id`) REFERENCES `Teenused`(`Teenus_tüüp_id`);
 
+//ALTER TABLE `Külastajad` DROP FOREIGN KEY `Spa_id`;
+//ALTER TABLE `Toa_tüübid` DROP FOREIGN KEY  `Toa_tüübid_fk0`; 
+//ALTER TABLE `Toa_tüübid` ADD CONSTRAINT `Toa_tüübid_fk0` PRIMARY KEY (`Spa_id`);
 
 /*                                  PEAMISED PARANDUSED
  * 1. Tegime väiksed parandused objektide tüüpidele, mis diagrammis olid näpuvea tõttu sisse jäänud
