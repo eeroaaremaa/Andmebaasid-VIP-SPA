@@ -150,6 +150,17 @@ INSERT INTO Külastajad
 VALUES (7, 1, 'Warrent', 'Puhvet', '2020-05-10 15:24:53', '2020-05-11 10:00:00', 0, '50003235289', 2);
 
 
+// Lisame ööbivad kliendid
+// Id, Saabumine, väljumine, toa_nr
+
+INSERT INTO Ööbivad_kliendid (Id, Saabumine, Väljumine, Toa_nr)
+VALUES (1, '2020-05-09 19:55:23', '2020-05-10 10:00:00',10);
+
+INSERT INTO Ööbivad_kliendid (Id, Saabumine, Väljumine, Toa_nr)
+VALUES (6, '2020-05-10 14:24:53', '2020-05-11 10:00:00',50);
+
+
+
 // Loome teenused
 // TeenuseTüüpID, teenuse nimi, teenuse hind
 
@@ -179,3 +190,53 @@ VALUES (8, 'Meeõlu', 3);
 
 INSERT INTO Teenused 
 VALUES (9, 'Hommikusöök', 15);
+
+
+// Lisame külalistele teenused
+// Külastaja id ja teenuse id
+INSERT INTO "Külastaja teenused"
+VALUES (1, 1);
+
+INSERT INTO "Külastaja teenused"
+VALUES (1, 5);
+
+INSERT INTO "Külastaja teenused"
+VALUES (1, 8);
+
+INSERT INTO "Külastaja teenused"
+VALUES (1, 8);
+
+INSERT INTO "Külastaja teenused"
+VALUES (1, 8);
+
+INSERT INTO "Külastaja teenused"
+VALUES (1, 8);
+
+INSERT INTO "Külastaja teenused"
+VALUES (3, 9);
+
+INSERT INTO "Külastaja teenused"
+VALUES (2, 3);
+
+INSERT INTO "Külastaja teenused"
+VALUES (4, 5);
+
+INSERT INTO "Külastaja teenused"
+VALUES (4, 5);
+
+INSERT INTO "Külastaja teenused"
+VALUES (6, 3);
+
+INSERT INTO "Külastaja teenused"
+VALUES (4, 9);
+
+INSERT INTO "Külastaja teenused"
+VALUES (4, 9);
+
+INSERT INTO "Külastaja teenused"
+VALUES (4, 1);
+
+
+
+// Kõik andmed lisatud
+
