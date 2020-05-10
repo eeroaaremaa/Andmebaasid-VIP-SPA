@@ -1,4 +1,7 @@
 // Andmete lisamine
+// Autorid: Eero Ääremaa ja Oskar Lui Veelma
+// Kasutasime: SQL Central 17.0.4.2053, MySQL
+
 
 INSERT INTO SPAd
 VALUES(1, 'VIP SPA');

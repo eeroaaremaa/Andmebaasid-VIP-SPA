@@ -1,4 +1,5 @@
 // Autorid: Eero Ääremaa ja Oskar Lui Veelma
+// Kasutasime: SQL Central 17.0.4.2053, MySQL
 // Parandused all
 
 CREATE TABLE `Külastajad` (

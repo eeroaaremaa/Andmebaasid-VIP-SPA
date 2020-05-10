@@ -1,8 +1,9 @@
 // Protseduurid 
 // Autorid: Eero Ääremaa ja Oskar Lui Veelma
-// Kasutasime: SQL Central 17.0.4.2053
+// Kasutasime: SQL Central 17.0.4.2053, MySQL
 
 // Protseduur et arvutada kokku ühe kliendi poolt teenuste kogusumma, mida ta SPAs kulutas
+// Selle jaoks leiame kõik teenused ja nende hinnad ning leiame selle summa
 
 CREATE PROCEDURE KliendiPooltKulutatudSummaSPAs @KliendiID int
 AS
@@ -17,6 +18,7 @@ EXEC KliendiPooltKulutatudSummaSPAs @KliendiID = 1;
 
 
 // Milliseid tube üks teenindaja teenindab ning näitame, kas tegemist on kuldkliendiga
+// Selle jaoks leiame millised kliendid on ööbivad kliendid ning kes neid kliente teenindavad
 
 CREATE PROCEDURE TeenindajaToad @TeenindajaID int
 AS 
@@ -34,6 +36,7 @@ EXEC TeenindajaToad @TeenindajaID = 3;
 
 
 // Valime kõik toad, mis on hõivatud ja näitame kliendi nime, isikukoodi, kuldkliendi staatuse, teenindaja nime ja millal tuba vabaneb
+// Selle jaoks leiame kõik ööbivad kliendid ning leiame neile vastava teenindaja ning kuvame info tabelisse
 
 CREATE PROCEDURE TubadeÜlevaade
 AS
