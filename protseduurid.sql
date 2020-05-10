@@ -52,3 +52,20 @@ END
 GO;
 
 EXEC TubadeÜlevaade;
+
+
+// Protseduur kuldklientide leidmiseks, kes on enda kümnende külastuse juures
+// Kui kuldkliendi külastused jaguvad kümnega siis näitame kuldkliendi külastuste summat, vastasel juhul ei näita midagi
+
+// DROP PROCEDURE KuldklientideKampaania;
+
+CREATE PROCEDURE KuldklientideKampaania @KuldkliendiID integer AS
+BEGIN 
+SELECT Külastused_kokku
+FROM Kuldkliendid
+WHERE Külastused_kokku % 10 = 0 
+AND id = @KuldkliendiID;
+END
+GO;
+
+EXEC KuldklientideKampaania @KuldkliendiID = 3;

@@ -125,6 +125,9 @@ VALUES (1, '38907192465', '2019-12-14 12:42:51', 32);
 INSERT INTO Kuldkliendid
 VALUES (2, '38604142374', '2019-02-16 17:26:23', 22);
 
+INSERT INTO Kuldkliendid
+VALUES (3, '39604142344', '2018-02-13 13:16:33', 60);
+
 // Loome külastajad
 // ID, SPA ID, Eesnimi, perenimi, saabumine, lahkumine, kuldklient, isikukood, teenidaja id
 
