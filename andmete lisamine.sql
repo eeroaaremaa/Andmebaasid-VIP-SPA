@@ -131,5 +131,51 @@ VALUES (2, '38604142374', '2019-02-16 17:26:23', 22);
 INSERT INTO Külastajad 
 VALUES (1, 1, 'Elon', 'Must', '2020-05-09 19:55:23', '2020-05-10 10:00:00', 1, '38907192465', 1);
 
-INSERT INTO Külastajad 
-VALUES (1, 1, 'Mark', 'Kuubis', '2020-05-09 14:24:53', '2020-05-10 10:00:00', 2, '50103230534', 0);
+INSERT INTO Külastajad
+VALUES (2, 1, 'Mark', 'Kuubis', '2020-05-09 14:24:53', '2020-05-10 10:00:00', 0, '50103230534', 2);
+
+INSERT INTO Külastajad
+VALUES (3, 1, 'Bill', 'Geits', '2020-05-01 17:24:53', '2020-05-11 10:00:00', 0, '40105230631', 4);
+
+INSERT INTO Külastajad
+VALUES (4, 1, 'Jeff', 'Peesos', '2020-05-10 11:24:53', '2020-05-11 10:00:00', 0, '39403430734', 2);
+
+INSERT INTO Külastajad
+VALUES (5, 1, 'Pablo', 'Eskargo', '2020-05-10 13:24:53', '2020-05-11 10:00:00', 1, '38604142374', 5);
+
+INSERT INTO Külastajad
+VALUES (6, 1, 'Tim', 'Õun', '2020-05-10 14:24:53', '2020-05-11 10:00:00', 0, '46802042654', 3);
+
+INSERT INTO Külastajad
+VALUES (7, 1, 'Warrent', 'Puhvet', '2020-05-10 15:24:53', '2020-05-11 10:00:00', 0, '50003235289', 2);
+
+
+// Loome teenused
+// TeenuseTüüpID, teenuse nimi, teenuse hind
+
+INSERT INTO Teenused 
+VALUES (1, 'Massaž 30min', 15);
+
+INSERT INTO Teenused 
+VALUES (2, 'Massaž 1h', 25);
+
+INSERT INTO Teenused 
+VALUES (3, 'Sauna pääs 1.5h', 10);
+
+INSERT INTO Teenused 
+VALUES (4, 'Ujula pääs 1.5h', 10);
+
+INSERT INTO Teenused 
+VALUES (5, 'Ujula pääs üks päev', 17);
+
+INSERT INTO Teenused 
+VALUES (6, 'Kokteil Gin Tonic', 4);
+
+INSERT INTO Teenused 
+VALUES (7, 'Piimakokteil', 5);
+
+INSERT INTO Teenused 
+VALUES (8, 'Meeõlu', 3);
+
+INSERT INTO Teenused 
+VALUES (9, 'Hommikusöök', 15);
